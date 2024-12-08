@@ -1,0 +1,20 @@
+<app-header></app-header>
+
+<div class="visitors-container">
+  <div *ngIf="(visitors$ | async)?.length === 0" class="no-data">No visitors data available</div>
+
+  <div class="visitor-cards">
+    <div class="visitor-card" *ngFor="let visitor of visitors$ | async">
+      <div class="visitor-details">
+        <h2>{{ visitor.tourGuide }}</h2>
+        <p><strong>Date:</strong> {{ visitor.date | date:'mediumDate' }}</p>
+        <!-- <p><strong>Time:</strong> {{ visitor.time | date:'shortTime' }}</p> -->
+        <p><strong>Capacity:</strong> {{ visitor.capacity }}</p>
+        <p><strong>Booking Status:</strong> {{ visitor.bookingStatus }}</p>
+
+        
+        <button mat-button (click)="openBookingDialog(visitor)">Book Now</button>
+      </div>
+    </div>
+  </div>
+</div>

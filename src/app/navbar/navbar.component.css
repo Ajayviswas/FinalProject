@@ -1,0 +1,247 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f8f9fa; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-top: 80px; 
+  }
+  
+
+  nav {
+    background-color: #2d6a4f; 
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    
+  }
+  
+  
+  .navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-left: 30%;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    
+    
+    
+  }
+  
+
+
+
+  
+  
+
+
+
+
+
+  .navbar-brand:hover {
+    color: #f8c000; 
+  }
+  
+  
+  .navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .navbar-nav li {
+    position: relative;
+  }
+  
+  .navbar-nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 10px 15px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    
+  }
+  
+  .navbar-nav a:hover {
+    background-color: #f8c000;
+    color: #343a40;
+  }
+  
+ 
+  .nav-item.dropdown {
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: #2d6a4f;
+    min-width: 150px;
+    border-radius: 5px;
+    padding: 10px 0;
+  }
+  
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu a {
+    padding: 8px 15px;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #f8c000;
+    color: #343a40;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .navbar-nav {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      gap: 15px;
+    }
+  
+    .navbar-nav a {
+      padding: 15px 20px;
+      font-size: 1.1rem;
+      width: 100%;
+      text-align: left;
+    }
+  }
+  
+  .navbar-toggler {
+    border: none;
+    background-color: transparent;
+  }
+  
+  .navbar-toggler-icon {
+    background-color: white;
+  }
+  
+  .navbar-nav .active > a {
+    background-color: #f8c000;
+    color: #343a40;
+  }
+  
+  
+  .main-content {
+    padding-top: 100px; 
+  }
+  
+  .hero-section {
+    /* background-image: url('assets/img1.jpg'); */
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 40px;
+  }
+  
+  .hero-section h1 {
+    margin: 0;
+  }
+  
+  
+  .section {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .section p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    padding: 0 20px;
+  }
+  
+  
+  footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  
+  button {
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    background-color: #f8c000;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #343a40;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .hero-section {
+      height: 350px; 
+      font-size: 1.8rem;
+    }
+  
+    .section h2 {
+      font-size: 2rem;
+    }
+  
+    .section p {
+      font-size: 1rem;
+    }
+  
+    footer {
+      padding: 15px;
+    }
+  }
+  

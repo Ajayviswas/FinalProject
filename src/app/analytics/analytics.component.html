@@ -1,0 +1,25 @@
+
+<app-header></app-header>
+<div class="charts-container">
+    
+    <div class="chart">
+      <ngx-charts-pie-chart
+        [results]="pieChartData"
+        [view]="pieChartView"
+        [legend]="true"
+        [doughnut]="true">
+      </ngx-charts-pie-chart>
+    </div>
+  
+    
+    <div class="chart">
+      <ngx-charts-bar-vertical
+        [results]="barChartData"
+        [view]="barChartView"
+        [legend]="true"
+        [xAxis]="true"
+        [yAxis]="true">
+      </ngx-charts-bar-vertical>
+    </div>
+  </div>
+  

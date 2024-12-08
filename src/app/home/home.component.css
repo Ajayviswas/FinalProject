@@ -1,0 +1,156 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+}
+  
+ 
+  .home-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #fff;
+    background-image: url("https://i0.wp.com/www.re-thinkingthefuture.com/wp-content/uploads/2023/04/A9928-Top-10-Archeological-sites-around-India-Image-6.jpg?w=999");
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  
+  
+  .hero-section {
+    width: 100%;
+    height: 60vh;
+   
+
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    margin-top: 100px;
+  }
+  
+  .hero-description {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #d1e8e2; 
+  }
+  
+  .cta-button {
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    background-color: #f8c000; 
+    color: #333;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #e0a900; 
+    transform: translateY(-3px); 
+  }
+  
+ 
+  .features-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    padding: 50px 20px;
+  }
+  
+  .feature-box {
+    width: 250px;
+    padding: 20px;
+    background-color: #eff6f3; 
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .feature-box h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #2d6a4f;
+  }
+  
+  .feature-box p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+ 
+  .footer {
+    width: 100%;
+    background-color: #2d6a4f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+  }
+  
+  .footer p {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .features-image{
+    background-image: url('/assets/req.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  }
+
+  
+  
+  
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 2rem;
+    }
+  
+    .hero-description {
+      font-size: 1.2rem;
+    }
+  
+    .cta-button {
+      font-size: 1rem;
+    }
+  
+    .features-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .feature-box {
+      width: 90%;
+      margin: 10px 0;
+    }
+  }
+  

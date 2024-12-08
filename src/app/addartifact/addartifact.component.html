@@ -1,0 +1,48 @@
+<h1 mat-dialog-title>Add New Artifact</h1>
+
+<div mat-dialog-content>
+  <form>
+    <mat-form-field>
+      <mat-label>Site ID</mat-label>
+      <input matInput [(ngModel)]="artifact.siteId" name="siteId" required type="number" />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Artifact Name</mat-label>
+      <input matInput [(ngModel)]="artifact.name" name="name" required />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Material</mat-label>
+      <input matInput [(ngModel)]="artifact.material" name="material" required />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Condition</mat-label>
+      <input matInput [(ngModel)]="artifact.condition" name="condition" required />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Cultural Significance</mat-label>
+      <input matInput [(ngModel)]="artifact.culturalSignificance" name="culturalSignificance" required />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Date Found</mat-label>
+      <input matInput [(ngModel)]="artifact.dateFound" name="dateFound" type="date" required />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Preservation Status</mat-label>
+      <input matInput [(ngModel)]="artifact.preservationStatus" name="preservationStatus" required />
+    </mat-form-field>
+  </form>
+</div>
+
+
+<div mat-dialog-actions>
+  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-button (click)="onSave()">Save</button>
+  <h1 mat-dialog-title>Add New Artifact</h1>
+  
+</div>

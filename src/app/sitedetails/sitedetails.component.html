@@ -1,0 +1,54 @@
+
+<app-header></app-header>
+<div class="site-details-container" >
+  <!-- <h1>{{ site.name }}</h1> -->
+  <p><strong>Location:</strong> {{ site.location }}</p>
+  <p><strong>Historical Period:</strong> {{ site.historicalPeriod }}</p>
+  <p><strong>Description:</strong> {{ site.description }}</p>
+  <p><strong>Discovered By:</strong> {{ site.discoveredBy }}</p>
+  <p><strong>Conservation Status:</strong> {{ site.conservationStatus }}</p>
+  <p><strong>Discovered On:</strong> {{ site.dateDiscovered | date: 'short' }}</p>
+  <img [src]="site.imageUrl" alt="Site Image" style="max-width: 100%; height: auto; margin-top: 20px;" />
+</div>
+
+
+
+<!-- 
+<app-header></app-header>
+
+<div class="site-details-container"> -->
+  <!-- Site Image -->
+  <!-- <div class="site-image" >
+    <img [src]="site.imageUrl" alt="Image of {{ site.name }}" style ="margin-top:100px" />
+  </div> -->
+
+  <!-- Site Details -->
+  <!-- <h1>{{ site.name }}</h1>
+  <p><strong>Location:</strong> {{ site.location }}</p>
+  <p><strong>Historical Period:</strong> {{ site.historicalPeriod }}</p>
+  <p><strong>Description:</strong> {{ site.description }}</p>
+  <p><strong>Discovered By:</strong> {{ site.discoveredBy }}</p>
+  <p><strong>Conservation Status:</strong> {{ site.conservationStatus }}</p>
+  <p><strong>Discovered On:</strong> {{ site.dateDiscovered | date: 'short' }}</p> -->
+
+  <!-- Excavation Programs -->
+  <!-- <div class="excavation-programs">
+    <h2>Ongoing Excavation Programs</h2>
+    <ul>
+      <li *ngFor="let program of site.excavationPrograms">{{ program }}</li>
+    </ul>
+  </div> -->
+
+  <!-- Artifacts Section -->
+  <!-- <div class="artifacts">
+    <h2>Artifacts Found at This Site</h2>
+    <div class="artifact-cards">
+      <div class="artifact-card" *ngFor="let artifact of site.artifacts"> -->
+        <!-- <img [src]="artifact.imageUrl" alt="Artifact Image" /> -->
+        <!-- <img [src]="artifact.imageUrl || 'https://via.placeholder.com/150'" alt="site image">
+        <h3>{{ artifact.name }}</h3>
+        <p>{{ artifact.description }}</p>
+      </div>
+    </div>
+  </div>
+</div>  -->

@@ -1,0 +1,34 @@
+<app-header></app-header>
+
+<div class="artifacts-container">
+
+  <div class="button-container">
+    <button mat-raised-button color="primary" (click)="openAddArtifactDialog()">Add Artifact</button>
+  </div>
+  <h2>Artifacts</h2>
+
+  <div class="artifacts-cards">
+    <div class="card" *ngFor="let artifact of artifacts">
+      <img 
+        [src]="artifact.imageUrl || 'https://via.placeholder.com/150'" 
+        alt="{{ artifact.name }}" 
+        class="artifact-image"
+      />
+      <div class="card-content">
+
+        <p><strong>Id</strong> {{ artifact.artifactId }}</p>
+        <p><strong>Material:</strong> {{ artifact.material }}</p>
+        <p><strong>Condition:</strong> {{ artifact.condition }}</p>
+        <p><strong>Cultural Significance:</strong> {{ artifact.culturalSignificance }}</p>
+        <p><strong>Date Found:</strong> {{ artifact.dateFound | date:'longDate' }}</p>
+        <p><strong>Preservation Status:</strong> {{ artifact.preservationStatus }}</p>
+
+        
+        <button mat-raised-button color="accent" (click)="viewArtifactDetails(artifact)">View</button>
+        <!-- <button mat-raised-button color="primary" (click)="openEditArtifactDialog(artifact)">Edit</button> -->
+      </div>
+    </div>
+  </div>
+
+  
+</div>

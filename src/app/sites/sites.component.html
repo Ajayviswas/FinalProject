@@ -1,0 +1,39 @@
+
+  <app-header></app-header>
+  
+
+<div class="container">
+  
+  <div class="button-container">
+    <button  (click)="toggleSiteView()">All Sites</button>
+    <button (click)="toggleSiteView()">My Sites</button>
+    <button class="ajay"  color="primary" (click)="openAddSiteDialog()">Add Site</button>
+  </div>
+ 
+  <div class="site-cards">
+    <div *ngFor="let site of sites" class="site-card">
+      <div class="site-image">
+        
+        <!-- <img src="https://via.placeholder.com/150" alt="site image"> -->
+        <img [src]="site.imageUrl || 'https://via.placeholder.com/150'" alt="site image">
+      </div>
+      <div class="site-details">
+        <h3>{{ site.name }}</h3>
+        <p><strong>Id</strong> {{ site.siteId }}</p>
+        <p><strong>Location:</strong> {{ site.location }}</p>
+        <p><strong>Historical Period:</strong> {{ site.historicalPeriod }}</p>
+        <p><strong>Description:</strong> {{ site.description }}</p>
+        <p><strong>Discovered By:</strong> {{ site.discoveredBy }}</p>
+        <p><strong>Conservation Status:</strong> {{ site.conservationStatus }}</p>
+        <p><strong>Discovered On:</strong> {{ site.dateDiscovered | date: 'short' }}</p>
+        
+        <!-- <button class="ajay"  (click)="viewSiteDetails(site.siteId)" color="primary">View</button> -->
+        <button class="ajay" (click)="openEditSiteDialog(site)" color="primary">Edit</button>
+      </div>
+    </div>
+  </div>
+  
+
+</div>
+
+  

@@ -1,0 +1,78 @@
+.publications-container {
+  padding: 150px;
+}
+
+.publication-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.publication-card {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.publication-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.publication-card .publication-details {
+  padding: 10px 0;
+}
+
+.publication-card h2 {
+  font-size: 20px;
+  color: #333;
+}
+
+.publication-card p {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
+}
+
+.publication-card a {
+  font-size: 14px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.publication-card a:hover {
+  text-decoration: underline;
+}
+
+.ajay{
+  background-color:#2d6a4f; 
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 10px;
+
+}
+
+.ajay2 {
+  padding: 12px;
+  font-size: 1.2rem;
+  background-color: #2d6a4f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-container{
+  margin-bottom: 15px;
+  margin-left: 450px;
+}

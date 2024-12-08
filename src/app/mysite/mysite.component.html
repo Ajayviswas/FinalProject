@@ -1,0 +1,46 @@
+
+
+<app-header></app-header>
+
+<div class="container">
+   
+    <button (click)="onMySitesClick()" class="btn btn-primary mb-3">My Sites</button>
+  
+    
+    <div *ngIf="allSites.length > 0">
+      <h3>All Sites:</h3>
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let site of allSites">
+          <strong>Name:</strong> {{ site.name }}<br>
+          <strong>Location:</strong> {{ site.location }}<br>
+          <strong>Historical Period:</strong> {{ site.historicalPeriod }}<br>
+          <strong>Description:</strong> {{ site.description }}<br>
+          <strong>Discovered By:</strong> {{ site.discoveredBy }}<br>
+          <strong>Conservation Status:</strong> {{ site.conservationStatus }}<br>
+          <strong>Date Discovered:</strong> {{ site.dateDiscovered | date:'yyyy-MM-dd' }}<br>
+        </li>
+      </ul>
+    </div>
+  
+   
+    <div *ngIf="mySites.length > 0">
+      <h3>My Sites (Discovered by {{ userId }}):</h3>
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let site of mySites">
+          <strong>Name:</strong> {{ site.name }}<br>
+          <strong>Location:</strong> {{ site.location }}<br>
+          <strong>Historical Period:</strong> {{ site.historicalPeriod }}<br>
+          <strong>Description:</strong> {{ site.description }}<br>
+          <strong>Discovered By:</strong> {{ site.discoveredBy }}<br>
+          <strong>Conservation Status:</strong> {{ site.conservationStatus }}<br>
+          <strong>Date Discovered:</strong> {{ site.dateDiscovered | date:'yyyy-MM-dd' }}<br>
+        </li>
+      </ul>
+    </div>
+  
+    
+    <div *ngIf="mySites.length === 0 && allSites.length === 0">
+      <p>No sites found.</p>
+    </div>
+  </div>
+  

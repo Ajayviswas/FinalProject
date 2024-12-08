@@ -1,0 +1,24 @@
+
+<header class="navbar">
+  <div class="logo">
+    <a (click)="navigateTo('/mainpage')" class="logo-link">
+      <h1>ASM</h1>
+    </a>
+  </div>
+  <nav class="nav-links">
+    <button *ngIf="isArchaeologist() || isAdmin()" (click)="navigateTo('/analytics')" class="nav-button">Analytics</button>
+    <!-- <button  *ngIf="isAdmin() || isConservator()" (click)="navigateTo('/maps')" class="nav-button">Maps</button> -->
+    <button   (click)="navigateTo('/conservationprojects')" class="nav-button">Conservators</button>
+    <button  (click)="navigateTo('/visitors')" class="nav-button">Visitor</button>
+    <button *ngIf="isArchaeologist() || isAdmin()" (click)="navigateTo('/sites')" class="nav-button">Sites</button>
+    <button *ngIf="isArchaeologist() || isAdmin()" (click)="navigateTo('/artifacts')" class="nav-button">Artifacts</button>
+    <button *ngIf="isAdmin()" (click)="navigateTo('/publications')" class="nav-button">Publications</button>
+    <button *ngIf="isResearcher() || isAdmin()" (click)="navigateTo('/excavations')" class="nav-button">Excavations</button>
+    <button (click)="logout()" class="nav-button">Logout</button>
+    
+  </nav>
+</header>
+<!-- <app-home></app-home> -->
+
+
+  

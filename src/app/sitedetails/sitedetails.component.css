@@ -1,0 +1,85 @@
+
+.site-details-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .site-image img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  
+  .excavation-programs h2 {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .excavation-programs ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .excavation-programs li {
+    background-color: #e3f2fd;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  
+  .artifacts {
+    margin-top: 30px;
+  }
+  
+  .artifacts h2 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .artifact-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .artifact-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .artifact-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .artifact-card h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .artifact-card p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  

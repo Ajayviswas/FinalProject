@@ -1,0 +1,18 @@
+<app-header></app-header>
+
+<div class="excavations-container">
+  <div *ngFor="let excavation of excavations" class="excavation-card">
+    <img src="https://via.placeholder.com/150" alt="Excavation Image" class="excavation-image" />
+    <div class="excavation-details">
+      <h3>{{ excavation.title }}</h3>
+      <p><strong>Site ID:</strong> {{ excavation.siteId }}</p>
+      <p><strong>Start Date:</strong> {{ excavation.startDate | date }}</p>
+      <p><strong>End Date:</strong> {{ excavation.endDate | date }}</p>
+      <p><strong>Lead Archaeologist:</strong> {{ excavation.leadArchaeologist }}</p>
+      <p><strong>Status:</strong> {{ excavation.status }}</p>
+    </div>
+  </div>
+  <div class="button-container">
+    <button class="ajay" color="primary" (click)="openAddExcavationDialog()">Add Excavation</button>
+  </div>
+</div>

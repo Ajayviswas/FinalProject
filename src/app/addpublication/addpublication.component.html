@@ -1,0 +1,40 @@
+<h1 mat-dialog-title>Add New Publication</h1>
+
+<div mat-dialog-content>
+  <form>
+    <mat-form-field>
+      <mat-label>Site ID</mat-label>
+      <input matInput [(ngModel)]="publication.siteId" name="siteId" required type="number" />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Author</mat-label>
+      <input matInput [(ngModel)]="publication.author" name="author" required />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Title</mat-label>
+      <input matInput [(ngModel)]="publication.title" name="title" required />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Abstract</mat-label>
+      <input matInput [(ngModel)]="publication.abstract" name="abstract" required />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Date Published</mat-label>
+      <input matInput [(ngModel)]="publication.datePublished" name="datePublished" type="date" required />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>File Link</mat-label>
+      <input matInput [(ngModel)]="publication.fileLink" name="fileLink" required />
+    </mat-form-field>
+  </form>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-button (click)="onSave()">Save</button>
+</div>

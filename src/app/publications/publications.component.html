@@ -1,0 +1,28 @@
+<app-header></app-header>
+
+<div class="publications-container">
+  <div *ngIf="publications.length === 0" class="no-data">No publications available</div>
+
+
+  <div class="button-container">
+    <button class="ajay2" color="primary" (click)="openAddPublicationDialog()">Add Publication</button>
+  </div>
+
+  <div class="publication-cards">
+    <div class="publication-card" *ngFor="let publication of publications">
+      <img src="https://via.placeholder.com/150" alt="{{ publication.title }}" class="publication-image" />
+      <div class="publication-details">
+        <h2>{{ publication.title }}</h2>
+        <p><strong>Id</strong> {{ publication.publicationId }}</p>
+        <p><strong>Author:</strong> {{ publication.author }}</p>
+        <p><strong>Abstract:</strong> {{ publication.abstract }}</p>
+        <p><strong>Date Published:</strong> {{ publication.datePublished | date:'mediumDate' }}</p>
+        
+        
+        <button class="ajay" mat-raised-button color="accent" (click)="viewPublicationDetails(publication)">View</button>
+      </div>
+    </div>
+  </div>
+
+ 
+</div>

@@ -1,0 +1,38 @@
+<h2 mat-dialog-title>Edit Artifact</h2>
+<mat-dialog-content>
+  <mat-form-field appearance="fill">
+    <mat-label>Name</mat-label>
+    <input matInput [(ngModel)]="artifact.name" />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Material</mat-label>
+    <input matInput [(ngModel)]="artifact.material" />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Condition</mat-label>
+    <input matInput [(ngModel)]="artifact.condition" />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Cultural Significance</mat-label>
+    <input matInput [(ngModel)]="artifact.culturalSignificance" />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Preservation Status</mat-label>
+    <input matInput [(ngModel)]="artifact.preservationStatus" />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Date Found</mat-label>
+    <input matInput [(ngModel)]="artifact.dateFound" type="date" />
+  </mat-form-field>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+  <button mat-button (click)="cancel()">Cancel</button>
+  <button mat-raised-button color="primary" (click)="saveChanges()">Save</button>
+</mat-dialog-actions>
+

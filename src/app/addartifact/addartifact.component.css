@@ -1,0 +1,120 @@
+
+mat-dialog-content {
+    padding: 16px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  mat-dialog-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #2d6a4f;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+  
+  
+  mat-form-field {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  
+  
+  mat-form-field mat-label {
+    color: #343a40;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  
+  mat-input-element {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 100%;
+    transition: border-color 0.3s ease;
+  }
+  
+  mat-input-element:focus {
+    border-color: #2d6a4f;
+    outline: none;
+  }
+  
+  
+  mat-dialog-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    padding: 12px 16px;
+    background-color: #f8f8f8;
+    border-top: 1px solid #ddd;
+  }
+
+
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  
+ 
+  button[mat-button] {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button[mat-button]:first-child {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  button[mat-button]:first-child:hover {
+    background-color: #d32f2f;
+  }
+  
+  button[mat-button]:last-child {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  button[mat-button]:last-child:hover {
+    background-color: #388e3c;
+  }
+  
+  button[mat-button]:hover {
+    transform: scale(1.05);
+  }
+  
+  button[mat-button]:focus {
+    outline: none;
+  }
+  
+  
+  @media (max-width: 768px) {
+    mat-dialog-content {
+      padding: 12px;
+    }
+  
+    mat-dialog-title {
+      font-size: 1.4rem;
+    }
+  
+    button[mat-button] {
+      padding: 8px 14px;
+      font-size: 0.8rem;
+    }
+  
+    mat-form-field {
+      margin-bottom: 12px;
+    }
+  }
+  

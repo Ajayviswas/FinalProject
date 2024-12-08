@@ -1,0 +1,40 @@
+<h1 mat-dialog-title>Add New Excavation</h1>
+
+<div mat-dialog-content>
+  <form>
+    <mat-form-field>
+      <mat-label>Site ID</mat-label>
+      <input matInput [(ngModel)]="excavation.siteId" name="siteId" required type="number" />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Excavation Title</mat-label>
+      <input matInput [(ngModel)]="excavation.title" name="title" required />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Start Date</mat-label>
+      <input matInput [(ngModel)]="excavation.startDate" name="startDate" type="date" required />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>End Date</mat-label>
+      <input matInput [(ngModel)]="excavation.endDate" name="endDate" type="date" required />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Lead Archaeologist</mat-label>
+      <input matInput [(ngModel)]="excavation.leadArchaeologist" name="leadArchaeologist" required />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Status</mat-label>
+      <input matInput [(ngModel)]="excavation.status" name="status" required />
+    </mat-form-field>
+  </form>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-button (click)="onSave()">Save</button>
+</div>

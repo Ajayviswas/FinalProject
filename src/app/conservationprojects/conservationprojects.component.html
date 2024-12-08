@@ -1,0 +1,20 @@
+<app-header></app-header>
+
+<app-header></app-header>
+
+<div class="conservation-projects-container">
+  <div *ngIf="conservationProjects.length === 0" class="no-data">No conservation projects available</div>
+
+  <div class="project-cards">
+    <div class="project-card" *ngFor="let project of conservationProjects">
+      <h3>{{ project.objective }}</h3>
+      <p><strong>Conservation Method:</strong> {{ project.conservationMethod }}</p>
+      <p><strong>Start Date:</strong> {{ project.startDate | date: 'mediumDate' }}</p>
+      <p><strong>End Date:</strong> {{ project.endDate | date: 'mediumDate' }}</p>
+      <p><strong>Funding Source:</strong> {{ project.fundingSource }}</p>
+      
+      <button class="ajay" color="accent">View Details</button>
+    </div>
+  </div>
+</div>
+

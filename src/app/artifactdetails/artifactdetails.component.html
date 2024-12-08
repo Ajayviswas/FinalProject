@@ -1,0 +1,18 @@
+<app-header></app-header>
+
+<div class="artifact-details-container">
+  <div class="artifact-detail-card">
+    <img [src]="artifact.imageUrl || 'https://via.placeholder.com/150'" alt="{{ artifact.name }}" class="artifact-detail-image" />
+    
+    <div class="artifact-detail-content">
+     
+      <p><strong>Id:</strong> {{ artifact.artifactId }}</p>
+      <p><strong>Material:</strong> {{ artifact.material }}</p>
+      <p><strong>Condition:</strong> {{ artifact.condition }}</p>
+      <p><strong>Cultural Significance:</strong> {{ artifact.culturalSignificance }}</p>
+      <p><strong>Date Found:</strong> {{ artifact.dateFound | date:'longDate' }}</p>
+      <p><strong>Preservation Status:</strong> {{ artifact.preservationStatus }}</p>
+    </div>
+  </div>
+</div>
+

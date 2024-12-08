@@ -1,0 +1,23 @@
+<app-header></app-header>
+<div class="publication-details-container" *ngIf="publication">
+    <div class="publication-header">
+      <h2>{{ publication.title }}</h2>
+      <p class="author"><strong>Author:</strong> {{ publication.author }}</p>
+    </div>
+  
+    <div class="publication-info">
+      <p><strong>Abstract:</strong> {{ publication.abstract }}</p>
+      <p><strong>Date Published:</strong> {{ publication.datePublished | date: 'mediumDate' }}</p>
+     
+    </div>
+  
+    <div class="publication-links">
+      <a [href]="'https://' + publication.fileLink" target="_blank" rel="noopener noreferrer" class="view-btn">View Publication</a>
+    </div>
+  </div>
+  
+  
+  <div *ngIf="!publication" class="loading-state">
+    <p>Loading publication details...</p>
+  </div>
+  
